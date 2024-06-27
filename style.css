@@ -1,6 +1,3 @@
-/* style.css */
-
-/* General body styles */
 body {
     background-image: url('./Background_image.avif');
     background-size: cover;
@@ -9,24 +6,16 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    /* Ensures full viewport height */
 }
 
-/* Responsive font sizes using clamp() */
-
-/* Font size for the calculator display */
 #result {
     font-size: clamp(20px, 4vw, 36px);
-    /* Responsive font size from 20px to 36px */
     text-align: right;
-    /* Align text to the right */
     padding: 10px;
 }
 
-/* Font size for calculator buttons */
 .btn {
     font-size: clamp(16px, 3vw, 24px) !important;
-    /* Responsive font size from 16px to 24px */
     color: rgb(8, 8, 8) !important;
     font-weight: bold !important;
     font-family: "Poppins", sans-serif !important;
@@ -43,7 +32,6 @@ body {
     background-color: rgba(101, 247, 17, 0.5);
 }
 
-/* Calculator container */
 .cal-div {
     backdrop-filter: blur(0px) saturate(180%);
     -webkit-backdrop-filter: blur(0px) saturate(180%);
@@ -53,15 +41,12 @@ body {
     padding: 20px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     #result {
         font-size: clamp(18px, 5vw, 30px);
-        /* Smaller screens: font size from 18px to 30px */
     }
 
     .btn {
         font-size: clamp(14px, 4vw, 20px) !important;
-        /* Smaller screens: font size from 14px to 20px */
     }
 }
